@@ -1,5 +1,5 @@
-if [ "$VERSION_ID" !=  "8" && "$VERSION_ID" != "9" ]; then
-	_warning "Only Debian Stretch and Jessie are officially supported (but this might work)"
+if [ "$VERSION_ID" !=  "8" && "$VERSION_ID" != "9" && "$VERSION_ID" != "10"]; then
+	_warning "Only Debian Buster, Stretch and Jessie are officially supported (but this might work)"
 fi
 
 . distributions/base.sh
