@@ -7,6 +7,7 @@ function install_git {
 function install_script_dependencies {
 	$APT update
 	$APT install -y openssl wget || _error "Could not install packages"
+	$APT install -y python3-dev python3-distutils make g++ unzip || _error "Could not install packages"
 }
 
 function install_rocksdb_dependencies {
